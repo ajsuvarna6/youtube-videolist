@@ -1,0 +1,75 @@
+.container
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .cardItem
+        width: 96%;
+        height: 110px;
+        display: flex;
+        padding: 10px;
+        cursor: pointer;
+    .cardItemLeft
+        display: flex;
+        flex: 45% 1;
+        width: 100%;
+        max-width: 200px;
+        min-height: 95px;
+        max-height: 110px;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        img
+            width: 100%;
+            max-height: 110px;
+    .cardItemRight
+        display: flex;
+        flex: 55%;
+        margin-left: 20px;
+        flex-direction: column;
+        margin-right: 20px;
+    .cardItemTitle
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 15px;
+        line-height: 1.3em;
+        margin-bottom: 5px;
+    .channelTitle
+        font-size: 13px;
+        color: #6d6d6d;
+    .time
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.75);
+        min-width: 40px;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 11px;
+        padding: 3px 4px;
+        border-radius: 2px;
+    .infoBar
+        margin-top: 5px;
+        font-size: 14px;
+        color: #6d6d6d;
+
+.loadMoreContainer
+    display: flex;
+    justify-content: center;
+    .loadMore
+        background-color: #fff;
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 12px 50px;
+        font-size: 16px;
+        cursor: pointer;
+    span
+        padding: 12px 50px;
